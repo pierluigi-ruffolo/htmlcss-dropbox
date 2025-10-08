@@ -45,7 +45,7 @@ header a {
 
   /* debug temporaneo */
   min-height: 600px;
-  background-color: grey;
+  background-color: blue;
 }
 
 .container-header {
@@ -78,6 +78,9 @@ header a {
 }
 .pd-90 {
   padding: 90px;
+}
+.pd-top-90 {
+  padding-top: 90px;
 }
 
 /* Margini utili */
@@ -179,3 +182,22 @@ header {
 /* =======================
    FOOTER
    ======================= */
+
+   footer {
+    background-color: black;
+   }
+
+   .cl-20 {
+    width: 20%;
+
+    /* debug */
+    background-color: red;
+    border: 2px solid white;
+    min-height: 500px;
+   }
+
+   .separator {
+      border: 2px solid gray;
+    margin-top: 50px;
+    width: 15%;
+   }
