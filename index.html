@@ -4,28 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dropbox</title>
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- HEADER con navigazione -->
     <header class="pd-10">
       <div class="container-header flex jc-between align-center">
-        <div class="header-left flex gap pd-10">
-          <div class="img"><a href="#">Immagine</a></div>
-          <div class="because"><a href="#">Perchè Dropbox</a></div>
-          <div class="functions"><a href="#">Funzioni</a></div>
-          <div class="plans"><a href="#">Piani e prezzi</a></div>
-        </div>
-        <div class="header-right flex gap pd-10">
-          <div class="support"><a href="#">Supporto</a></div>
-          <div class="contact"><a href="#">Contatta l'ufficio vendite</a></div>
-          <div class="log-in"><a href="#">Accedi</a></div>
-          <div class="start"><a href="#">Inizia</a></div>
-        </div>
+        <!-- Menu di sinistra -->
+        <ul class="header-left flex gap pd-10">
+          <li><a href="#">Immagine</a></li>
+          <li><a href="#">Perchè Dropbox</a></li>
+          <li><a href="#">Funzioni</a></li>
+          <li><a href="#">Piani e prezzi</a></li>
+        </ul>
+        <!-- Menu di destra -->
+        <ul class="header-right flex gap pd-10">
+          <li><a href="#">Supporto</a></li>
+          <li><a href="#">Contatta l'ufficio vendite</a></li>
+          <li><a href="#">Accedi</a></li>
+          <li><a href="#">Inizia</a></li>
+        </ul>
       </div>
     </header>
+
     <main>
-      <!-- inizio sezione hero  -->
-      <section class="section-hero pd-90 bg-acqua">
+      <!-- HERO: sezione introduttiva -->
+      <section class="pd-90 bg-acqua">
         <div class="container-large">
           <div class="title-hero"></div>
           <div class="hero-footer flex">
@@ -34,20 +39,57 @@
           </div>
         </div>
       </section>
-      <!-- Fine sezione hero -->
-      <!-- Inizio sezione subscription -->
-      <section></section>
-      <!-- Fine sezione subscription -->
-      <!-- Inizio sezione partner -->
-      <section></section>
-      <!-- fine sezione partner -->
-      <!-- Inizio sezione  operations-->
-      <section></section>
-      <!-- fine sezione  operations-->
-      <!-- Inizio sezione team -->
-      <section></section>
-      <!-- fine sezione team -->
+
+      <!-- SUBSCRIPTION: piani e prezzi -->
+      <section class="pd-90 bg-orange">
+        <div class="subscription container-small">
+          <div class="title-subscriotion"></div>
+          <div class="flex jc-between mg-top-30">
+            <!-- Colonne per i piani business -->
+            <div class="col-business"></div>
+            <div class="col-business"></div>
+            <div class="col-business"></div>
+          </div>
+          <!-- Opzione enterprise separata -->
+          <div class="enterprise mg-top-30"></div>
+        </div>
+      </section>
+
+      <!-- PARTNER: immagine + testo -->
+      <section class="pd-90 bg-acqua">
+        <div class="section-partner container-small flex">
+          <div class="img-partner"></div>
+          <div class="text-partner"></div>
+        </div>
+      </section>
+
+      <!-- OPERATIONS: funzioni e operazioni -->
+      <section class="pd-90 bg-orange">
+        <div class="operations container-small">
+          <div class="title-operations"></div>
+          <div class="cl-operations flex wrap jc-between">
+            <!-- Sei colonne uguali -->
+            <div class="cl-30"></div>
+            <div class="cl-30"></div>
+            <div class="cl-30"></div>
+            <div class="cl-30"></div>
+            <div class="cl-30"></div>
+            <div class="cl-30"></div>
+          </div>
+        </div>
+      </section>
+      <!-- sezione team -->
+      <section class="pd-90 bg-acqua">
+        <div class="container-small">
+          <div class="team">
+            <h1 class="title-team"></div>
+            <a class="link-team" href="#"></a>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- FOOTER -->
     <footer></footer>
   </body>
 </html>
