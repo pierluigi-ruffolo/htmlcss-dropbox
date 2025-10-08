@@ -6,42 +6,52 @@
     <title>Dropbox</title>
 
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
     <!-- HEADER con navigazione -->
     <header class="pd-10">
-      <div class="container-header flex jc-between align-center">
+      <div class="flex jc-between align-center">
         <!-- Menu di sinistra -->
-        <ul class="header-left flex gap pd-10">
-          <li><a href="#">Immagine</a></li>
+        <ul class="header-left flex gap pd-10 align-center">
+          <li><a href="#"><img src="./img/logo-small.png" alt=""></a></li>
           <li><a href="#">Perchè Dropbox</a></li>
           <li><a href="#">Funzioni</a></li>
           <li><a href="#">Piani e prezzi</a></li>
         </ul>
         <!-- Menu di destra -->
-        <ul class="header-right flex gap pd-10">
+        <ul class="header-right flex gap pd-10 align-center">
           <li><a href="#">Supporto</a></li>
           <li><a href="#">Contatta l'ufficio vendite</a></li>
           <li><a href="#">Accedi</a></li>
-          <li><a href="#">Inizia</a></li>
+          <li><a class="btn" href="#">Inizia</a></li>
         </ul>
       </div>
     </header>
 
     <main>
       <!-- HERO: sezione introduttiva -->
-      <section class="pd-90 bg-acqua">
+      <section class="pd-top-150 bg-acqua">
         <div class="container-large">
-          <div class="title-hero"></div>
+          <div class="title-hero">
+            <h1>Tutto cio che ti serve per il lavoro, in un unico posto</h1>
+          </div>
           <div class="hero-footer flex">
-            <div class="description-hero"></div>
-            <div class="img-hero"></div>
+            <div class="description-hero">
+              <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro:è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
+            <a class="btn mg-top-30"href="#">Inizia la prova gratuita</a>
+            <p class="mg-top-30">Annulla in qualsiasi momento</p>
+            <span><i class="arrow fa-solid fa-arrow-down mg-top-30"></i></span>
+          </div>
+            <div class="img-hero">
+              <img src="./img/jumbo.png" alt="">
+            </div>
           </div>
         </div>
       </section>
 
       <!-- SUBSCRIPTION: piani e prezzi -->
-      <section class="pd-90 bg-orange">
+      <section class="pd-90">
         <div class="subscription container-small">
           <div class="title-subscriotion"></div>
           <div class="flex jc-between mg-top-30">
