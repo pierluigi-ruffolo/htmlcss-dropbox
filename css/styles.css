@@ -1,4 +1,6 @@
-/* RESET */
+/* =======================
+   RESET DI BASE
+   ======================= */
 * {
   margin: 0;
   padding: 0;
@@ -10,16 +12,20 @@ img {
   max-width: 100%;
 }
 
-/* Font generale */
+/* Font generale e testi */
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+p {
+  font-size: 1rem;
+}
 
+/* Stile generico per pulsanti */
 .btn {
- background-color: rgba(0, 97, 253);
-color: white;
- padding: 10px 20px;
- text-decoration: none;
+  background-color: rgba(0, 97, 253);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
 }
 
 /* =======================
@@ -28,25 +34,22 @@ color: white;
 .container-small {
   max-width: 900px;
   margin: 0 auto;
-
-  /* debug temporaneo */
-  min-height: 400px;
-  background-color: rgb(0, 255, 145);
+  min-height: 400px; /* debug temporaneo */
+  /* background-color: rgb(0, 255, 145); */
 }
 
 .container-large {
   max-width: 1000px;
   margin: 0 auto;
-
-  /* debug temporaneo */
-/*  min-height: 600px; 
-  background-color: blue; */
+  /* min-height: 600px;
+     background-color: blue; debug */
 }
 
 /* =======================
-   UTILITIES
+   UTILITIES (classi riutilizzabili)
    ======================= */
-/* Flexbox */
+
+/* Gestione flexbox */
 .flex {
   display: flex;
 }
@@ -59,7 +62,12 @@ color: white;
 .wrap {
   flex-wrap: wrap;
 }
-.gap {
+
+/* Spaziatura tra elementi */
+.gap-10 {
+  gap: 10px;
+}
+.gap-40 {
   gap: 40px;
 }
 
@@ -67,11 +75,17 @@ color: white;
 .pd-10 {
   padding: 10px;
 }
+.pd-20 {
+  padding: 20px;
+}
 .pd-30 {
   padding: 30px;
 }
 .pd-90 {
   padding: 90px;
+}
+.pd-20-top {
+  padding-top: 20px;
 }
 .pd-top-90 {
   padding-top: 90px;
@@ -80,18 +94,48 @@ color: white;
   padding-top: 150px;
 }
 
-/* Margini utili */
+/* Margin utili */
+.mg-20 {
+  margin: 20px;
+}
+.mg-top-10 {
+  margin-top: 10px;
+}
+.mg-top-20 {
+  margin-top: 20px;
+}
 .mg-top-30 {
   margin-top: 30px;
 }
-
-
-.bg-acqua {
-  background-color: rgba(180, 208, 230)
-
-
+.mg-top-50 {
+  margin-top: 50px;
 }
-/* Colori di debug */
+.mg-bottom-20 {
+  margin-bottom: 20px;
+}
+.mg-5-right {
+  margin-right: 5px;
+}
+.mg-10-right {
+  margin-right: 10px;
+}
+.mg-10-left {
+  margin-left: 10px;
+}
+
+.mg-30-left {
+  margin-left: 30px;
+}
+
+/* Colori e background di utilità */
+.bg-acqua {
+  background-color: rgba(180, 208, 230);
+}
+.cl-blue {
+  color: blue;
+}
+
+/* Classi solo per debug */
 .bg-orange {
   background-color: orange;
 }
@@ -105,28 +149,25 @@ header {
   background-color: white;
   position: fixed;
   z-index: 999;
-
 }
-/* Rimuovo i puntini dalle liste nel menu */
-header ul {
+
+ul {
   list-style: none;
 }
 
-/* Link senza sottolineatura, colore ereditato */
+/* Link nell’header senza sottolineatura */
 header a {
   text-decoration: none;
   color: inherit;
-  
 }
 a {
   display: inline-block;
 }
-/* bottoni */
 
+/* Pulsanti nell’header */
 header .btn {
   padding: 10px 15px;
 }
-
 
 /* =======================
    MAIN SECTIONS
@@ -143,10 +184,10 @@ header .btn {
 .description-hero {
   width: 40%;
   padding-top: 60px;
-  padding-left:  30px;
+  padding-left: 30px;
   padding-right: 10px;
   padding-bottom: 10px;
-} 
+}
 .arrow {
   font-size: 2.5rem;
 }
@@ -158,72 +199,77 @@ header .btn {
 }
 
 /* SUBSCRIPTION section */
-.title-subscriotion {
-  /* debug */
-  min-height: 150px;
-  background-color: black;
+.title-subscriotion h2 {
+  font-size: 2.5rem;
+}
+.title-subscriotion input[type="radio"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
 }
 
+/* Business cards (piani / box) */
 .col-business {
   width: 30%;
-  /* debug */
-  min-height: 400px;
-  background-color: red;
+  border: 1px solid rgba(128, 128, 128, 0.582);
 }
-
+.container-small h3 {
+  font-size: 1.8rem;
+}
+.single {
+  text-align: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.582);
+}
+.month {
+  color: gray;
+}
+.separation-main {
+  border: 1px solid rgba(128, 128, 128, 0.582);
+  width: 25%;
+}
 .enterprise {
-  /* debug */
-  min-height: 300px;
-  background-color: black; 
+  border: 1px solid rgba(128, 128, 128, 0.582);
+}
+.solutions {
+  width: 70%;
 }
 
 /* PARTNER section */
 .img-partner {
   width: 50%;
-  /* debug */
-  background-color: white; 
+  background-color: white; /* debug */
 }
-
 .text-partner {
-  width: 50%;ù
-  /* debug */
-  background-color: beige;
+  width: 50%;
+  background-color: beige; /* debug */
 }
 
 /* OPERATIONS section */
 .title-operations {
-  /* debug */
   min-height: 150px;
- background-color: black; 
+  background-color: black; /* debug */
 }
-
 .cl-30 {
   width: 30%;
   margin-top: 10px;
-  /* debug */
   min-height: 500px;
-  background-color: aqua;
+  background-color: aqua; /* debug */
 }
 
 /* =======================
    FOOTER
    ======================= */
-
-   footer {
-    background-color: black;
-   }
-
-   .cl-20 {
-    width: 20%;
-
-    /* debug */
-    background-color: red;
-    border: 2px solid white;
-    min-height: 500px;
-   }
-
-   .separator {
-      border: 2px solid gray;
-    margin-top: 50px;
-    width: 15%;
-   }
+footer {
+  background-color: black;
+}
+.cl-20 {
+  width: 20%;
+  min-height: 500px;
+  background-color: red; /* debug */
+  border: 2px solid white;
+}
+.separator {
+  border: 2px solid gray;
+  margin-top: 50px;
+  width: 15%;
+}
