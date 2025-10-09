@@ -218,6 +218,10 @@ header a {
   color: inherit;
 }
 
+header a:hover {
+  border-bottom: 1px solid black;
+}
+
 /* Pulsanti nell’header */
 header .btn {
   padding: 5px 10px;
