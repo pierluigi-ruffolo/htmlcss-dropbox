@@ -17,7 +17,19 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 p {
-  font-size: 1rem;
+  font-size: 1.2rem;
+}
+ul {
+  list-style: none;
+}
+a {
+  display: inline-block;
+}
+main h2 {
+  font-size: 2.5rem;
+}
+main h3 {
+  font-size: 1.8rem;
 }
 
 /* Stile generico per pulsanti */
@@ -34,15 +46,17 @@ p {
 .container-small {
   max-width: 900px;
   margin: 0 auto;
-  min-height: 400px; /* debug temporaneo */
-  /* background-color: rgb(0, 255, 145); */
+  /* debug */
+  /*  min-height: 400px;
+  background-color: rgb(0, 255, 145); */
 }
 
 .container-large {
   max-width: 1000px;
   margin: 0 auto;
-  /* min-height: 600px;
-     background-color: blue; debug */
+  /* debug */
+  /*  min-height: 600px;
+  background-color: blue; */
 }
 
 /* =======================
@@ -81,6 +95,9 @@ p {
 .pd-30 {
   padding: 30px;
 }
+.pd-50 {
+  padding: 50px;
+}
 .pd-90 {
   padding: 90px;
 }
@@ -92,6 +109,9 @@ p {
 }
 .pd-top-150 {
   padding-top: 150px;
+}
+.pd-bottom-50 {
+  padding-bottom: 50px;
 }
 
 /* Margin utili */
@@ -151,17 +171,10 @@ header {
   z-index: 999;
 }
 
-ul {
-  list-style: none;
-}
-
 /* Link nell’header senza sottolineatura */
 header a {
   text-decoration: none;
   color: inherit;
-}
-a {
-  display: inline-block;
 }
 
 /* Pulsanti nell’header */
@@ -199,9 +212,7 @@ header .btn {
 }
 
 /* SUBSCRIPTION section */
-.title-subscriotion h2 {
-  font-size: 2.5rem;
-}
+
 .title-subscriotion input[type="radio"] {
   display: inline-block;
   width: 20px;
@@ -211,24 +222,23 @@ header .btn {
 /* Business cards (piani / box) */
 .col-business {
   width: 30%;
-  border: 1px solid rgba(128, 128, 128, 0.582);
+  border: 1px solid rgba(235, 235, 237);
 }
-.container-small h3 {
-  font-size: 1.8rem;
-}
+
 .single {
   text-align: center;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.582);
+  border-bottom: 1px solid rgba(235, 235, 237);
 }
 .month {
   color: gray;
 }
 .separation-main {
-  border: 1px solid rgba(128, 128, 128, 0.582);
+  border: 1px solid rgba(235, 235, 237);
+
   width: 25%;
 }
 .enterprise {
-  border: 1px solid rgba(128, 128, 128, 0.582);
+  border: 1px solid rgba(235, 235, 237);
 }
 .solutions {
   width: 70%;
@@ -237,11 +247,16 @@ header .btn {
 /* PARTNER section */
 .img-partner {
   width: 50%;
-  background-color: white; /* debug */
 }
+
 .text-partner {
   width: 50%;
-  background-color: beige; /* debug */
+}
+
+.text-partner .btn {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.915);
+  border: 1px solid rgba(0, 0, 0, 0.915);
 }
 
 /* OPERATIONS section */
