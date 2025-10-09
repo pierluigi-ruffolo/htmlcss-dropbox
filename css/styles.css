@@ -24,6 +24,7 @@ ul {
 }
 a {
   display: inline-block;
+  color: blue;
 }
 main h2 {
   font-size: 2.5rem;
@@ -31,7 +32,9 @@ main h2 {
 main h3 {
   font-size: 1.8rem;
 }
-
+main h4 {
+  font-size: 1.2rem;
+}
 /* Stile generico per pulsanti */
 .btn {
   background-color: rgba(0, 97, 253);
@@ -101,6 +104,10 @@ main h3 {
 .pd-90 {
   padding: 90px;
 }
+
+.pd-150 {
+  padding: 150px;
+}
 .pd-20-top {
   padding-top: 20px;
 }
@@ -109,6 +116,9 @@ main h3 {
 }
 .pd-top-150 {
   padding-top: 150px;
+}
+.pd-bottom-20 {
+  padding-bottom: 20px;
 }
 .pd-bottom-50 {
   padding-bottom: 50px;
@@ -154,12 +164,6 @@ main h3 {
 .cl-blue {
   color: blue;
 }
-
-/* Classi solo per debug */
-.bg-orange {
-  background-color: orange;
-}
-
 /* =======================
    HEADER
    ======================= */
@@ -260,15 +264,13 @@ header .btn {
 }
 
 /* OPERATIONS section */
-.title-operations {
-  min-height: 150px;
-  background-color: black; /* debug */
-}
+
 .cl-30 {
   width: 30%;
-  margin-top: 10px;
-  min-height: 500px;
-  background-color: aqua; /* debug */
+}
+
+.team {
+  width: 70%;
 }
 
 /* =======================
@@ -283,7 +285,7 @@ footer {
   background-color: red; /* debug */
   border: 2px solid white;
 }
-.separator {
+.separator-footer {
   border: 2px solid gray;
   margin-top: 50px;
   width: 15%;
