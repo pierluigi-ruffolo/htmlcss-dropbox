@@ -206,7 +206,6 @@ footer li {
    ======================= */
 header {
   width: 100%;
-  height: 80px;
   background-color: white;
   position: fixed;
   z-index: 999;
@@ -301,6 +300,7 @@ header .btn {
 
 .text-partner {
   width: 50%;
+  padding: 50px;
 }
 
 .text-partner .btn {
@@ -355,4 +355,36 @@ footer {
   border: 1px solid rgba(128, 128, 128, 0.448);
   margin-top: 30px;
   width: 15%;
+}
+
+@media screen and (max-width: 760px) {
+  .none-header {
+    display: none;
+  }
+  .title-hero {
+    font-size: 1.3rem;
+  }
+  .back {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .col-business {
+    width: 100%;
+  }
+
+  .text-partner {
+    padding: 0;
+    padding-left: 20px;
+  }
+
+  .col-square {
+    width: 100%;
+  }
+  .pd-media {
+    padding: 20px;
+  }
+  .pd-main-footer {
+    padding: 0;
+  }
 }
